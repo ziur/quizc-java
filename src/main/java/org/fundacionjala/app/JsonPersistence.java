@@ -21,7 +21,7 @@ public class JsonPersistence {
     private static Person readJsonFile() {
         Gson gson = new Gson();
         Person person = null;
-        try (JsonReader reader = new JsonReader(new FileReader("./myForm.json"))){
+        try (JsonReader reader = new JsonReader(new FileReader("./myForm.json"))) {
             person = gson.fromJson(reader, Person.class);
         } catch (IOException exception) {
             exception.printStackTrace();

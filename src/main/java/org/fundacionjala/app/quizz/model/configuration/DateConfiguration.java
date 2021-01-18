@@ -10,7 +10,7 @@ public class DateConfiguration extends QuestionConfiguration {
     public DateConfiguration() {
         super(false, ValidatorType.REQUIRED, ValidatorType.DATE);
     }
-    
+
     @Override
     public String convertValue(String value) {
         return FORMATTER.format(value);

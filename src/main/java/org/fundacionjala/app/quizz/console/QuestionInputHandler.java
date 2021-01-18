@@ -47,7 +47,6 @@ public class QuestionInputHandler {
         System.out.println("0. To Finish");
     }
 
-
     private char readOption() {
         System.out.print("> ");
         return System.console().readLine().trim().charAt(0);

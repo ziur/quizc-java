@@ -10,7 +10,7 @@ import org.fundacionjala.app.quizz.model.QuizAnswers;
 public class QuizUIHandler {
 
 	public static Quiz createQuiz() {
-        return new QuizUIMenu().handleCreateQuiz();
+		return new QuizUIMenu().handleCreateQuiz();
 	}
 
 	public static QuizAnswers fillQuiz(Quiz quiz) {
@@ -34,7 +34,7 @@ public class QuizUIHandler {
 		for (Answer answer : quizAnswers.getAnswers()) {
 			System.out.println(answer);
 		}
-		
+
 		System.out.println("=============================================");
 		System.out.println("Press ENTER to continue");
 		System.console().readLine();

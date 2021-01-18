@@ -7,5 +7,5 @@ public class PickOneConfiguration extends QuestionConfiguration {
     public PickOneConfiguration() {
         super(true, ValidatorType.REQUIRED);
     }
-    
+
 }

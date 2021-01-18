@@ -5,7 +5,7 @@ import org.fundacionjala.app.quizz.model.Quiz;
 
 public class QuizUIMenu {
 
-	public Quiz handleCreateQuiz() {
+    public Quiz handleCreateQuiz() {
         String title = askQuizTitle();
         Quiz quiz = new Quiz(title);
         boolean shouldExit = false;
@@ -25,10 +25,10 @@ public class QuizUIMenu {
                     System.out.println("Invalid option");
                     break;
             }
-        } while(!shouldExit);
+        } while (!shouldExit);
 
         return quiz;
-	}
+    }
 
     private char readOption() {
         System.out.print("> ");

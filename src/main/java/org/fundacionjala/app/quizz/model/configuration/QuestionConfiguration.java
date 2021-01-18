@@ -1,6 +1,5 @@
 package org.fundacionjala.app.quizz.model.configuration;
 
-
 import org.fundacionjala.app.quizz.model.validator.ValidatorType;
 
 public abstract class QuestionConfiguration {
@@ -20,7 +19,7 @@ public abstract class QuestionConfiguration {
         return value;
     }
 
-	public ValidatorType[] getSupportedValidations() {
-		return supportedValidations;
-	}
+    public ValidatorType[] getSupportedValidations() {
+        return supportedValidations;
+    }
 }

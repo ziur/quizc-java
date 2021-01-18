@@ -37,17 +37,17 @@ public enum QuestionType {
         return configuration.getSupportedValidations();
     }
 
-	public QuestionConfiguration getConfiguration() {
-		return configuration;
-	}
+    public QuestionConfiguration getConfiguration() {
+        return configuration;
+    }
 
-	public static QuestionType getByCode(int option) {
-        for(QuestionType type : QuestionType.values()) {
+    public static QuestionType getByCode(int option) {
+        for (QuestionType type : QuestionType.values()) {
             if (type.getCode() == option) {
                 return type;
             }
         }
 
         return null;
-	}
+    }
 }

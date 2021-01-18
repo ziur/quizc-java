@@ -16,11 +16,11 @@ public class Quiz {
         return title;
     }
 
-	public void addQuestion(Question question) {
+    public void addQuestion(Question question) {
         questions.add(question);
-	}
+    }
 
-	public List<Question> getQuestions() {
-		return questions;
-	}
+    public List<Question> getQuestions() {
+        return questions;
+    }
 }

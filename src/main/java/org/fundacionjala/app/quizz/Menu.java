@@ -14,7 +14,7 @@ public class Menu {
         this.quizAnswers = null;
     }
 
-	public boolean process() {
+    public boolean process() {
         showMainMenu();
         char option = readOption();
         boolean shouldExit = false;
@@ -57,7 +57,7 @@ public class Menu {
 
         quizAnswers = QuizUIHandler.fillQuiz(quiz);
     }
-    
+
     private void showMainMenu() {
         System.out.println("Quizc - A command quiz utility");
         System.out.println("======================================");

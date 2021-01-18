@@ -23,11 +23,11 @@ public class QuizAnswers {
         return id;
     }
 
-	public Quiz getQuiz() {
-		return quiz;
-	}
+    public Quiz getQuiz() {
+        return quiz;
+    }
 
-	public List<Answer> getAnswers() {
-		return answers;
-	}
+    public List<Answer> getAnswers() {
+        return answers;
+    }
 }

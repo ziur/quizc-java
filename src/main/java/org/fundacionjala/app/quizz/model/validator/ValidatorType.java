@@ -28,13 +28,13 @@ public enum ValidatorType {
         return validator;
     }
 
-	public static ValidatorType getByCode(int option) {
-		for (ValidatorType validator : ValidatorType.values()) {
+    public static ValidatorType getByCode(int option) {
+        for (ValidatorType validator : ValidatorType.values()) {
             if (validator.getCode() == option) {
                 return validator;
             }
         }
 
         return null;
-	}
+    }
 }
