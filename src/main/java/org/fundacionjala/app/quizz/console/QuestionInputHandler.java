@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.fundacionjala.app.quizz.model.Question;
+import org.fundacionjala.app.quizz.console.util.InputReader;
 
 public class QuestionInputHandler {
 
@@ -17,8 +18,8 @@ public class QuestionInputHandler {
         if (question.getType().getConfiguration().hasAdditionalData()) {
             answers.add(collectAnswerFromOptions(question));
         } else {
-            System.out.print(question.getType().getName() + " value: ");
-            String value = System.console().readLine();
+            System.out.println(question.getType().getName() + " value:");
+            String value = InputReader.readLine();
             answers.add(value);
         }
 
@@ -30,7 +31,7 @@ public class QuestionInputHandler {
 
         while (true) {
             showOptions(question);
-            char option = readOption();
+            char option = InputReader.readOption();
             if (option == '0') {
                 break;
             }
@@ -45,10 +46,5 @@ public class QuestionInputHandler {
             System.out.printf("%d. %s" + System.lineSeparator(), index + 1, question.getAdditionalData().get(index));
         }
         System.out.println("0. To Finish");
-    }
-
-    private char readOption() {
-        System.out.print("> ");
-        return System.console().readLine().trim().charAt(0);
     }
 }

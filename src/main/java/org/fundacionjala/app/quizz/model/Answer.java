@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.Set;
 
 public class Answer {
-    private Question question;
-    private Set<String> answers;
+    private final Question question;
+    private final Set<String> answers;
 
     public Answer(Question question, Set<String> answers) {
         this.question = question;

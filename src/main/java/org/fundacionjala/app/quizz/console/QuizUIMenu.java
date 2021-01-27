@@ -2,6 +2,7 @@ package org.fundacionjala.app.quizz.console;
 
 import org.fundacionjala.app.quizz.model.Question;
 import org.fundacionjala.app.quizz.model.Quiz;
+import org.fundacionjala.app.quizz.console.util.InputReader;
 
 public class QuizUIMenu {
 
@@ -12,7 +13,7 @@ public class QuizUIMenu {
 
         do {
             showMenu();
-            char option = readOption();
+            char option = InputReader.readOption();
             switch (option) {
                 case '1':
                     Question question = QuestionUIMenu.handleCreateQuestion();
@@ -30,11 +31,6 @@ public class QuizUIMenu {
         return quiz;
     }
 
-    private char readOption() {
-        System.out.print("> ");
-        return System.console().readLine().trim().charAt(0);
-    }
-
     private void showMenu() {
         System.out.println("Select an option:");
         System.out.println("1. Add a new question");
@@ -43,7 +39,6 @@ public class QuizUIMenu {
 
     private String askQuizTitle() {
         System.out.println("Type the quiz title");
-        System.out.print("> ");
-        return System.console().readLine();
+        return InputReader.readLine();
     }
 }

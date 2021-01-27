@@ -3,6 +3,7 @@ package org.fundacionjala.app.quizz;
 import org.fundacionjala.app.quizz.console.QuizUIHandler;
 import org.fundacionjala.app.quizz.model.Quiz;
 import org.fundacionjala.app.quizz.model.QuizAnswers;
+import org.fundacionjala.app.quizz.console.util.InputReader;
 
 public class Menu {
 
@@ -16,7 +17,7 @@ public class Menu {
 
     public boolean process() {
         showMainMenu();
-        char option = readOption();
+        char option = InputReader.readOption();
         boolean shouldExit = false;
         switch (option) {
             case '1':
@@ -66,10 +67,5 @@ public class Menu {
         System.out.println("3. Show quiz");
         System.out.println("4. Exit");
         System.out.println("======================================");
-    }
-
-    private char readOption() {
-        System.out.print("> ");
-        return System.console().readLine().trim().charAt(0);
     }
 }

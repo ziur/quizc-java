@@ -6,6 +6,7 @@ import org.fundacionjala.app.quizz.model.Answer;
 import org.fundacionjala.app.quizz.model.Question;
 import org.fundacionjala.app.quizz.model.Quiz;
 import org.fundacionjala.app.quizz.model.QuizAnswers;
+import org.fundacionjala.app.quizz.console.util.InputReader;
 
 public class QuizUIHandler {
 
@@ -37,6 +38,6 @@ public class QuizUIHandler {
 
 		System.out.println("=============================================");
 		System.out.println("Press ENTER to continue");
-		System.console().readLine();
+		InputReader.readLine();
 	}
 }

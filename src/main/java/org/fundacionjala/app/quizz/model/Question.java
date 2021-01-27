@@ -35,9 +35,9 @@ public class Question {
     }
 
     public static class QuestionBuilder {
-        private String title;
-        private QuestionType questionType;
-        private List<ValidatorType> validations;
+        private final String title;
+        private final QuestionType questionType;
+        private final List<ValidatorType> validations;
         private List<String> additionalData;
 
         public QuestionBuilder(String title, QuestionType questionType) {

@@ -8,9 +8,9 @@ public enum ValidatorType {
 
     private final int code;
     private final String displayName;
-    private final Validator<?, ?> validator;
+    private final Validator validator;
 
-    private ValidatorType(int code, String displayName, Validator<?, ?> validator) {
+    ValidatorType(int code, String displayName, Validator validator) {
         this.code = code;
         this.displayName = displayName;
         this.validator = validator;
@@ -24,7 +24,7 @@ public enum ValidatorType {
         return displayName;
     }
 
-    public Validator<?, ?> getValidator() {
+    public Validator getValidator() {
         return validator;
     }
 
